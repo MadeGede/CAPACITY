@@ -1,0 +1,3 @@
+export function PageSkeleton({ label, compact = false }: { label: string; compact?: boolean }) {
+  return <div role="status" aria-label={label} className={`${compact ? "py-5" : "mx-auto min-h-[60vh] max-w-7xl px-5 pb-20 pt-32 sm:px-8 lg:px-10"} animate-pulse`}><div className="h-3 w-28 rounded bg-slate-200" /><div className="mt-6 h-9 w-2/3 max-w-lg rounded bg-slate-200" /><div className="mt-4 h-4 w-3/4 max-w-xl rounded bg-slate-200" /><div className="mt-8 grid gap-4 md:grid-cols-2"><div className="h-64 rounded-lg border border-line bg-white" /><div className="h-64 rounded-lg border border-line bg-white" /></div></div>;
+}
